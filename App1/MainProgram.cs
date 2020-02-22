@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using HelloApp;
 
 namespace App1
 {
@@ -37,7 +36,7 @@ namespace App1
             Console.WriteLine("Пожалуйста, введите информацию о форме обучения:");
             Console.WriteLine("1, если форма очная");
             Console.WriteLine("0, если форма заочная");
-            string buffer = Console.ReadLine()?.Trim();
+            var buffer = Console.ReadLine()?.Trim();
             while (buffer == null || buffer != "1" && buffer != "0")
             {
                 Console.WriteLine("Попробуйте ещё раз:");

@@ -4,14 +4,6 @@ namespace App1
 {
     public class Student
     {
-        public string University { get; set; }
-        public string Faculty { get; set; }
-        public string Department { get; set; }
-        public bool IsFullTime { get; set; }
-        public int Form { get; set; }
-        public double AverageMark { get; set; }
-        public int Id { get; set; }
-
         public Student()
         {
             Id = 1;
@@ -56,6 +48,14 @@ namespace App1
             AverageMark = averageMark;
             Id = id;
         }
+
+        public string University { get; set; }
+        public string Faculty { get; set; }
+        public string Department { get; set; }
+        public bool IsFullTime { get; set; }
+        public int Form { get; set; }
+        public double AverageMark { get; set; }
+        public int Id { get; set; }
 
         public void PrintUniversity()
         {
