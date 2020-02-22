@@ -7,6 +7,7 @@
       <e p="App1" t="IncludeRecursive">
         <e p="App1.csproj" t="IncludeRecursive" />
         <e p="MainProgram.cs" t="Include" />
+        <e p="Student.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -20,7 +21,6 @@
       <e p="HelloApp" t="IncludeRecursive">
         <e p="HelloApp.csproj" t="IncludeRecursive" />
         <e p="HelloProgram.cs" t="Include" />
-        <e p="Student.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

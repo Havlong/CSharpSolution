@@ -1,6 +1,6 @@
 using System;
 
-namespace HelloApp
+namespace App1
 {
     public class Student
     {
