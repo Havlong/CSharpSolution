@@ -2,11 +2,11 @@
 
 namespace HelloApp
 {
-    static class Program
+    internal static class HelloProgram
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello, world!");
         }
     }
 }
