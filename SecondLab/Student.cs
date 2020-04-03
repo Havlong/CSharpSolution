@@ -1,9 +1,13 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 
-namespace App1
+namespace SecondLab
 {
     public class Student
     {
+        public static int AmountOfStudents;
+        public static Dictionary<string, Student> ListOfStudents = new Dictionary<string, Student>();
+        
         public Student()
         {
             Id = 1;
@@ -57,6 +61,11 @@ namespace App1
         public double AverageMark { get; set; }
         public int Id { get; set; }
 
+        public static string IntToHex(int x)
+        {
+            return x.ToString("X");
+        }
+        
         public void PrintUniversity()
         {
             Console.WriteLine($"Университет: {University}");
@@ -89,7 +98,7 @@ namespace App1
 
         public void PrintId()
         {
-            Console.WriteLine($"Номер зачётки: {Id:X}");
+            Console.WriteLine($"Номер зачётки: {Id}");
         }
 
         public override string ToString()
