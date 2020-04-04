@@ -39,10 +39,10 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.addButton.Location = new System.Drawing.Point(103, 186);
-            this.addButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.addButton.Location = new System.Drawing.Point(90, 140);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(251, 106);
+            this.addButton.Size = new System.Drawing.Size(219, 80);
             this.addButton.TabIndex = 0;
             this.addButton.Text = "Добавить студента\r\n";
             this.addButton.UseVisualStyleBackColor = true;
@@ -51,9 +51,10 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label1.Location = new System.Drawing.Point(14, 12);
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 160);
+            this.label1.Size = new System.Drawing.Size(359, 120);
             this.label1.TabIndex = 1;
             this.label1.Text =
                 "Лабораторная работа по C# №2.\r\n12 Вариант.\r\nКостерев Григорий\r\nЕвгений Гришин\r\n";
@@ -61,10 +62,10 @@
             // changeButton
             // 
             this.changeButton.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.changeButton.Location = new System.Drawing.Point(103, 320);
-            this.changeButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.changeButton.Location = new System.Drawing.Point(90, 240);
+            this.changeButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(251, 106);
+            this.changeButton.Size = new System.Drawing.Size(219, 80);
             this.changeButton.TabIndex = 2;
             this.changeButton.Text = "Изменить студента";
             this.changeButton.UseVisualStyleBackColor = true;
@@ -72,14 +73,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 481);
+            this.ClientSize = new System.Drawing.Size(384, 361);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.addButton);
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторная работа №2";

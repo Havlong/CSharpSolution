@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace SecondLab
+namespace FourthLab
 {
-    partial class ShowStudent
+    partial class ChangeStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,9 @@ namespace SecondLab
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(ShowStudent));
+            this.comboIdBox = new System.Windows.Forms.ComboBox();
+            this.sendButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
             this.idLabel = new System.Windows.Forms.Label();
             this.averageMarkLabel = new System.Windows.Forms.Label();
@@ -46,21 +47,48 @@ namespace SecondLab
             this.departmentBox = new System.Windows.Forms.TextBox();
             this.facultyBox = new System.Windows.Forms.TextBox();
             this.universityBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.sendButton = new System.Windows.Forms.Button();
-            this.countStudentsLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboIdBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // comboIdBox
+            // 
+            this.comboIdBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboIdBox.FormattingEnabled = true;
+            this.comboIdBox.Location = new System.Drawing.Point(59, 39);
+            this.comboIdBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.comboIdBox.Name = "comboIdBox";
+            this.comboIdBox.Size = new System.Drawing.Size(107, 23);
+            this.comboIdBox.TabIndex = 85;
+            // 
+            // sendButton
+            // 
+            this.sendButton.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.sendButton.Location = new System.Drawing.Point(101, 332);
+            this.sendButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.sendButton.Name = "sendButton";
+            this.sendButton.Size = new System.Drawing.Size(110, 62);
+            this.sendButton.TabIndex = 82;
+            this.sendButton.Text = "Изменить";
+            this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(10, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 23);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "Найти студента по ID:";
             // 
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.searchButton.Location = new System.Drawing.Point(201, 37);
+            this.searchButton.Location = new System.Drawing.Point(202, 35);
             this.searchButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(100, 30);
-            this.searchButton.TabIndex = 60;
+            this.searchButton.Size = new System.Drawing.Size(100, 43);
+            this.searchButton.TabIndex = 80;
             this.searchButton.Text = "Найти";
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
@@ -68,176 +96,123 @@ namespace SecondLab
             // idLabel
             // 
             this.idLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.idLabel.Location = new System.Drawing.Point(9, 40);
+            this.idLabel.Location = new System.Drawing.Point(10, 39);
             this.idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(44, 23);
-            this.idLabel.TabIndex = 59;
+            this.idLabel.TabIndex = 79;
             this.idLabel.Text = "ID:";
             // 
             // averageMarkLabel
             // 
             this.averageMarkLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.averageMarkLabel.Location = new System.Drawing.Point(9, 250);
+            this.averageMarkLabel.Location = new System.Drawing.Point(10, 249);
             this.averageMarkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.averageMarkLabel.Name = "averageMarkLabel";
             this.averageMarkLabel.Size = new System.Drawing.Size(159, 23);
-            this.averageMarkLabel.TabIndex = 58;
+            this.averageMarkLabel.TabIndex = 78;
             this.averageMarkLabel.Text = "Средняя оценка:";
             // 
             // FormLabel
             // 
             this.FormLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.FormLabel.Location = new System.Drawing.Point(9, 210);
+            this.FormLabel.Location = new System.Drawing.Point(10, 209);
             this.FormLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FormLabel.Name = "FormLabel";
             this.FormLabel.Size = new System.Drawing.Size(114, 23);
-            this.FormLabel.TabIndex = 57;
+            this.FormLabel.TabIndex = 77;
             this.FormLabel.Text = "Курс:";
             // 
             // isFullTimeCheckBox
             // 
             this.isFullTimeCheckBox.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.isFullTimeCheckBox.Location = new System.Drawing.Point(9, 290);
+            this.isFullTimeCheckBox.Location = new System.Drawing.Point(10, 288);
             this.isFullTimeCheckBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.isFullTimeCheckBox.Name = "isFullTimeCheckBox";
             this.isFullTimeCheckBox.Size = new System.Drawing.Size(159, 29);
-            this.isFullTimeCheckBox.TabIndex = 56;
+            this.isFullTimeCheckBox.TabIndex = 76;
             this.isFullTimeCheckBox.Text = "Очная форма";
             this.isFullTimeCheckBox.UseVisualStyleBackColor = true;
             // 
             // departmentLabel
             // 
             this.departmentLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.departmentLabel.Location = new System.Drawing.Point(9, 170);
+            this.departmentLabel.Location = new System.Drawing.Point(10, 168);
             this.departmentLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.departmentLabel.Name = "departmentLabel";
             this.departmentLabel.Size = new System.Drawing.Size(114, 23);
-            this.departmentLabel.TabIndex = 55;
+            this.departmentLabel.TabIndex = 75;
             this.departmentLabel.Text = "Кафедра:";
             // 
             // facultyLabel
             // 
             this.facultyLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.facultyLabel.Location = new System.Drawing.Point(9, 130);
+            this.facultyLabel.Location = new System.Drawing.Point(10, 129);
             this.facultyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.facultyLabel.Name = "facultyLabel";
             this.facultyLabel.Size = new System.Drawing.Size(114, 23);
-            this.facultyLabel.TabIndex = 54;
+            this.facultyLabel.TabIndex = 74;
             this.facultyLabel.Text = "Факультет:";
             // 
             // universityLabel
             // 
             this.universityLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.universityLabel.Location = new System.Drawing.Point(9, 90);
+            this.universityLabel.Location = new System.Drawing.Point(10, 89);
             this.universityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.universityLabel.Name = "universityLabel";
             this.universityLabel.Size = new System.Drawing.Size(114, 23);
-            this.universityLabel.TabIndex = 53;
+            this.universityLabel.TabIndex = 73;
             this.universityLabel.Text = "Университет:";
             // 
             // averageMarkBox
             // 
-            this.averageMarkBox.Location = new System.Drawing.Point(212, 250);
+            this.averageMarkBox.Location = new System.Drawing.Point(213, 249);
             this.averageMarkBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.averageMarkBox.Name = "averageMarkBox";
             this.averageMarkBox.Size = new System.Drawing.Size(88, 23);
-            this.averageMarkBox.TabIndex = 52;
+            this.averageMarkBox.TabIndex = 72;
             this.averageMarkBox.TextChanged += new System.EventHandler(this.averageMarkBox_TextChanged);
             // 
             // courseBox
             // 
-            this.courseBox.Location = new System.Drawing.Point(212, 210);
+            this.courseBox.Location = new System.Drawing.Point(213, 209);
             this.courseBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.courseBox.Name = "courseBox";
             this.courseBox.Size = new System.Drawing.Size(88, 23);
-            this.courseBox.TabIndex = 50;
+            this.courseBox.TabIndex = 71;
             this.courseBox.TextChanged += new System.EventHandler(this.courseBox_TextChanged);
             // 
             // departmentBox
             // 
-            this.departmentBox.Location = new System.Drawing.Point(155, 170);
+            this.departmentBox.Location = new System.Drawing.Point(157, 168);
             this.departmentBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.departmentBox.Name = "departmentBox";
             this.departmentBox.Size = new System.Drawing.Size(146, 23);
-            this.departmentBox.TabIndex = 49;
+            this.departmentBox.TabIndex = 70;
             // 
             // facultyBox
             // 
-            this.facultyBox.Location = new System.Drawing.Point(155, 130);
+            this.facultyBox.Location = new System.Drawing.Point(157, 129);
             this.facultyBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.facultyBox.Name = "facultyBox";
             this.facultyBox.Size = new System.Drawing.Size(146, 23);
-            this.facultyBox.TabIndex = 48;
+            this.facultyBox.TabIndex = 69;
             // 
             // universityBox
             // 
-            this.universityBox.Location = new System.Drawing.Point(155, 90);
+            this.universityBox.Location = new System.Drawing.Point(157, 89);
             this.universityBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.universityBox.Name = "universityBox";
             this.universityBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.universityBox.Size = new System.Drawing.Size(146, 23);
-            this.universityBox.TabIndex = 47;
+            this.universityBox.TabIndex = 68;
             // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label2.Location = new System.Drawing.Point(9, 10);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 23);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "Найти студента по ID:";
-            // 
-            // sendButton
-            // 
-            this.sendButton.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.sendButton.Location = new System.Drawing.Point(201, 330);
-            this.sendButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.sendButton.Name = "sendButton";
-            this.sendButton.Size = new System.Drawing.Size(100, 50);
-            this.sendButton.TabIndex = 64;
-            this.sendButton.Text = "Изменить";
-            this.sendButton.UseVisualStyleBackColor = true;
-            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
-            // 
-            // countStudentsLabel
-            // 
-            this.countStudentsLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.countStudentsLabel.Location = new System.Drawing.Point(412, 12);
-            this.countStudentsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.countStudentsLabel.Name = "countStudentsLabel";
-            this.countStudentsLabel.Size = new System.Drawing.Size(61, 23);
-            this.countStudentsLabel.TabIndex = 66;
-            this.countStudentsLabel.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label1.Location = new System.Drawing.Point(215, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 23);
-            this.label1.TabIndex = 65;
-            this.label1.Text = "Количество студентов";
-            // 
-            // comboIdBox
-            // 
-            this.comboIdBox.FormattingEnabled = true;
-            this.comboIdBox.Location = new System.Drawing.Point(58, 44);
-            this.comboIdBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.comboIdBox.Name = "comboIdBox";
-            this.comboIdBox.Size = new System.Drawing.Size(107, 23);
-            this.comboIdBox.TabIndex = 67;
-            // 
-            // ShowStudent
+            // ChangeStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 411);
+            this.ClientSize = new System.Drawing.Size(320, 406);
             this.Controls.Add(this.comboIdBox);
-            this.Controls.Add(this.countStudentsLabel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.searchButton);
@@ -253,35 +228,31 @@ namespace SecondLab
             this.Controls.Add(this.departmentBox);
             this.Controls.Add(this.facultyBox);
             this.Controls.Add(this.universityBox);
-            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "ShowStudent";
+            this.Name = "ChangeStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Изменить студента";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShowStudent_FormClosed);
+            this.Text = "ChangeStudent";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ChangeStudent_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Button sendButton;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox universityBox;
+        private System.Windows.Forms.TextBox facultyBox;
+        private System.Windows.Forms.TextBox departmentBox;
+        private System.Windows.Forms.TextBox courseBox;
+        private System.Windows.Forms.TextBox averageMarkBox;
         private System.Windows.Forms.Label universityLabel;
         private System.Windows.Forms.Label facultyLabel;
         private System.Windows.Forms.Label departmentLabel;
+        private System.Windows.Forms.CheckBox isFullTimeCheckBox;
         private System.Windows.Forms.Label FormLabel;
         private System.Windows.Forms.Label averageMarkLabel;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.TextBox averageMarkBox;
-        private System.Windows.Forms.TextBox courseBox;
-        private System.Windows.Forms.TextBox departmentBox;
-        private System.Windows.Forms.TextBox facultyBox;
-        private System.Windows.Forms.TextBox universityBox;
-        private System.Windows.Forms.CheckBox isFullTimeCheckBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label countStudentsLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.ComboBox comboIdBox;
     }
 }
