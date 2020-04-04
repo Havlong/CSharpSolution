@@ -55,7 +55,7 @@ namespace ThirdLab
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.addButton.Location = new System.Drawing.Point(11, 308);
+            this.addButton.Location = new System.Drawing.Point(10, 308);
             this.addButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(100, 60);
@@ -67,7 +67,7 @@ namespace ThirdLab
             // idLabel
             // 
             this.idLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.idLabel.Location = new System.Drawing.Point(11, 209);
+            this.idLabel.Location = new System.Drawing.Point(10, 209);
             this.idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(140, 23);
@@ -77,7 +77,7 @@ namespace ThirdLab
             // averageMarkLabel
             // 
             this.averageMarkLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.averageMarkLabel.Location = new System.Drawing.Point(11, 169);
+            this.averageMarkLabel.Location = new System.Drawing.Point(10, 168);
             this.averageMarkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.averageMarkLabel.Name = "averageMarkLabel";
             this.averageMarkLabel.Size = new System.Drawing.Size(145, 23);
@@ -87,7 +87,7 @@ namespace ThirdLab
             // FormLabel
             // 
             this.FormLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.FormLabel.Location = new System.Drawing.Point(11, 129);
+            this.FormLabel.Location = new System.Drawing.Point(10, 129);
             this.FormLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FormLabel.Name = "FormLabel";
             this.FormLabel.Size = new System.Drawing.Size(140, 23);
@@ -99,7 +99,7 @@ namespace ThirdLab
             this.isFullTimeCheckBox.Checked = true;
             this.isFullTimeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.isFullTimeCheckBox.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.isFullTimeCheckBox.Location = new System.Drawing.Point(11, 249);
+            this.isFullTimeCheckBox.Location = new System.Drawing.Point(10, 249);
             this.isFullTimeCheckBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.isFullTimeCheckBox.Name = "isFullTimeCheckBox";
             this.isFullTimeCheckBox.Size = new System.Drawing.Size(145, 29);
@@ -110,7 +110,7 @@ namespace ThirdLab
             // departmentLabel
             // 
             this.departmentLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.departmentLabel.Location = new System.Drawing.Point(11, 89);
+            this.departmentLabel.Location = new System.Drawing.Point(10, 89);
             this.departmentLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.departmentLabel.Name = "departmentLabel";
             this.departmentLabel.Size = new System.Drawing.Size(140, 23);
@@ -120,7 +120,7 @@ namespace ThirdLab
             // facultyLabel
             // 
             this.facultyLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.facultyLabel.Location = new System.Drawing.Point(11, 49);
+            this.facultyLabel.Location = new System.Drawing.Point(10, 48);
             this.facultyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.facultyLabel.Name = "facultyLabel";
             this.facultyLabel.Size = new System.Drawing.Size(140, 23);
@@ -130,7 +130,7 @@ namespace ThirdLab
             // universityLabel
             // 
             this.universityLabel.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.universityLabel.Location = new System.Drawing.Point(11, 9);
+            this.universityLabel.Location = new System.Drawing.Point(10, 9);
             this.universityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.universityLabel.Name = "universityLabel";
             this.universityLabel.Size = new System.Drawing.Size(140, 23);
@@ -139,7 +139,7 @@ namespace ThirdLab
             // 
             // averageMarkBox
             // 
-            this.averageMarkBox.Location = new System.Drawing.Point(213, 169);
+            this.averageMarkBox.Location = new System.Drawing.Point(213, 168);
             this.averageMarkBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.averageMarkBox.Name = "averageMarkBox";
             this.averageMarkBox.Size = new System.Drawing.Size(88, 23);
@@ -178,7 +178,7 @@ namespace ThirdLab
             // 
             // facultyBox
             // 
-            this.facultyBox.Location = new System.Drawing.Point(155, 49);
+            this.facultyBox.Location = new System.Drawing.Point(155, 48);
             this.facultyBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.facultyBox.Name = "facultyBox";
             this.facultyBox.Size = new System.Drawing.Size(146, 23);

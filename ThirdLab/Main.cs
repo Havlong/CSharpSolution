@@ -1,4 +1,4 @@
-﻿﻿using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
@@ -72,7 +72,9 @@ namespace ThirdLab
             startTime = Stopwatch.StartNew();
             
             if (QOfStudents.Count != 0)
+            {
                 QOfStudents.Dequeue();
+            }
 
             startTime.Stop();
             var leadTime = startTime.ElapsedTicks;
@@ -119,8 +121,10 @@ namespace ThirdLab
             Student[] arr = new Student[n];
             
             for (int i = 0; i < n; i++)
+            {
                 arr[i] = new Student(i + 1);
-
+            }
+            
             startTime.Stop();
             var leadTime = startTime.ElapsedTicks;
 
