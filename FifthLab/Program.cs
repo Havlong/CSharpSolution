@@ -7,8 +7,6 @@ namespace FifthLab
 {
     static class Program
     {
-        private static MainClass _main = MainClass.GetInstance();
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
