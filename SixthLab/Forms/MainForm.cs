@@ -7,6 +7,7 @@ namespace SixthLab.Forms
     public partial class MainForm : Form
     {
         private MainClass _main = MainClass.GetInstance();
+
         public MainForm()
         {
             InitializeComponent();
@@ -16,20 +17,20 @@ namespace SixthLab.Forms
         {
             try
             {
-                _main.Triple(_main.Rnd.Next(0, 100));
+                int number = _main.Rnd.Next(0, 100);
+                _main.MakeToast("OK", $"{number} * 3 = {(int)_main.Triple(number)}");
             }
             catch (Exception exception)
             {
                 _main.MakeToast("Error", exception.ToString());
             }
-            
         }
 
         private void CallString_Click(object sender, EventArgs e)
         {
             try
             {
-                _main.Triple("Hello world!");
+                _main.MakeToast("OK", $"Result is {_main.Triple("Hello world")}");
             }
             catch (Exception exception)
             {
