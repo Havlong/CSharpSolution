@@ -36,28 +36,26 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(10, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 90);
+            this.label1.Size = new System.Drawing.Size(266, 78);
             this.label1.TabIndex = 3;
-            this.label1.Text =
-                "Лабораторная работа по C# №5.\r\n12 Вариант.\r\nКостерев Григорий\r\nЕвгений Гришин\r\n";
+            this.label1.Text = "Лабораторная работа по C# №5.\r\n12 Вариант.\r\nКостерев Григорий\r\nЕвгений Гришин\r\n";
             // 
             // studentsList
             // 
             this.studentsList.FormattingEnabled = true;
-            this.studentsList.ItemHeight = 15;
-            this.studentsList.Location = new System.Drawing.Point(12, 102);
+            this.studentsList.Location = new System.Drawing.Point(10, 88);
             this.studentsList.Name = "studentsList";
-            this.studentsList.Size = new System.Drawing.Size(728, 349);
+            this.studentsList.Size = new System.Drawing.Size(625, 303);
             this.studentsList.TabIndex = 62;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 461);
+            this.ClientSize = new System.Drawing.Size(645, 400);
             this.Controls.Add(this.studentsList);
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
@@ -65,9 +63,9 @@
             this.ResumeLayout(false);
         }
 
-        #endregion
-
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox studentsList;
+
+        #endregion
     }
 }
