@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixthLab", "SixthLab\SixthL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeventhLab", "SeventhLab\SeventhLab.csproj", "{39C92F01-26A2-4351-83D5-9CF152C2D19B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EighthLab", "EighthLab\EighthLab.csproj", "{3FC3F8E9-394D-4AAE-A3A0-97A6D17FABE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{39C92F01-26A2-4351-83D5-9CF152C2D19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39C92F01-26A2-4351-83D5-9CF152C2D19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39C92F01-26A2-4351-83D5-9CF152C2D19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC3F8E9-394D-4AAE-A3A0-97A6D17FABE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC3F8E9-394D-4AAE-A3A0-97A6D17FABE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC3F8E9-394D-4AAE-A3A0-97A6D17FABE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC3F8E9-394D-4AAE-A3A0-97A6D17FABE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

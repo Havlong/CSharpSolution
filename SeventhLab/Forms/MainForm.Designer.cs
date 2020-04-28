@@ -85,6 +85,7 @@
             this.Controls.Add(this.RemoveStudentButton);
             this.Controls.Add(this.AddStudentButton);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
         }
